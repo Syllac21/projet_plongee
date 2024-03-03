@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once(__DIR__.'/assets/php/middleware/db_connect.php');
+require_once(__DIR__.'/assets/php/controllers/variables.php');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +16,13 @@
 </head>
 <body>
     <?php
-        require_once(__DIR__ . '/pages/home/home.php');
+        require_once(__DIR__.'/assets/php/components/login.php');
+    ?>
+    <?php
+        if(isset($_SESSION['LOGGED_USER'])){
+            require_once(__DIR__ . '/pages/home/home.php');
+        }
+        
     ?>
 </body>
 </html>
