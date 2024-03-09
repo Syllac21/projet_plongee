@@ -11,10 +11,9 @@
 
 <!-- formulaire de saisie de nouveau poisson -->
 <h2 class="text-center text-base font-semibold leading-7 text-gray-900">Nouveau poisson</h2>
-<form class="mx-auto w-1/2 flex flex-col justify-center">
+<form action="../../assets/php/controllers/add_fish.php" method="POST" class="mx-auto w-1/2 flex flex-col justify-center" enctype="multipart/form-data">
   <div class="space-y-12">
     
-
     <div class="border-b border-gray-900/10 pb-12">
      
       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -44,10 +43,10 @@
       
       <!-- photo -->
         <div class="col-span-full">
-          <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Photo</label>
+          <label for="image" class="block text-sm font-medium leading-6 text-gray-900">Photo</label>
           <div class="mt-2 flex items-center gap-x-3">
             
-            <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">télécharger</button>
+            <input type="file" name="image" id="image" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
           </div>
         </div>
 
