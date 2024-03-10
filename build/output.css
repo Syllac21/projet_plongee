@@ -639,6 +639,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -671,6 +675,14 @@ video {
   height: 100vh;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -693,6 +705,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-0\.5 {
+  width: 0.125rem;
 }
 
 .grid-cols-1 {
