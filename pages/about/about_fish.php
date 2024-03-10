@@ -46,12 +46,12 @@ $fish=[
 <body class="bg-cover bg-center h-screen" style="background-image: url('../../assets/images/fonds-marins.webp'); ">
     <?php require_once(dirname(__DIR__,2).'./assets/php/components/header.php' ); ?>
     <main class="container mx-auto p-5">
-        <h1 class="text-center text-2xl mb-4 text-blue-50"></h1>
+        
         <section class="grid grid-cols-2 gap-3">
             <div>
-                <h3 class="text-xl font-semibold mb-5"><?php echo $fish['fish_name']; ?> </h3>
-                <p class="mb-3"><?php echo $fish['about']; ?> </p>
-                <p><?php echo $fish['average_size']; ?> </p>
+                <h3 class="text-xl font-semibold mb-5 text-gray-300"> <?php echo $fish['fish_name']; ?> </h3>
+                <p class="mb-3 text-gray-300"><?php echo $fish['about']; ?> </p>
+                <p class="text-gray-300 italic">Taille moyenne :<?php echo $fish['average_size']; ?> </p>
             </div>
             <div class="mx-auto">
                 <img class="rounded-xl" src="../../assets/.<?php echo $fish['image']; ?>" alt="<?php echo $fish['fish_name']; ?> ">

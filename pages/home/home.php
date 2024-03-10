@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plongée - Accueil</title>
 </head>
-<body>
+<body class="bg-fixed bg-cover bg-center h-screen bg-no-repeat" style="background-image: url('../../assets/images/fonds-marins.webp'); ">
     <?php 
     require_once(dirname(__DIR__,2).'./assets/php/components/header.php') ;
     
