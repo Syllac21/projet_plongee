@@ -4,10 +4,10 @@ require_once(__DIR__.'../../middleware/db_connect.php');
 require_once(__DIR__.'../../controllers/variables.php');
 
 $postData=$_POST;
-var_dump($_FILES);
+
 // validation des données saisies
 
-// fish-name average-size about image
+
 
 if(
     trim(strip_tags($postData['fish-name']))==='' ||
@@ -67,4 +67,5 @@ $insertFish->execute([
     'image'=>$image,
 ]);
 
-header('location: ../../../../../index.php');
+header('location: /index.php');
+exit;

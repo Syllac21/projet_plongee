@@ -25,7 +25,7 @@ require_once(__DIR__.'../../../assets/php/controllers/variables.php');
     <h1 class="text-2xl text-center mb-10">Carte des spots de plongées</h1>
     <div id="map" class="bg-gray-200 mx-auto"> <!-- div de la map -->
         <script>
-            var map = L.map('map').setView([42.476496, 3.120023], 14); // centre de la carte d'origine
+            var map = L.map('map').setView([42.476496, 3.120023], 13); // centre de la carte d'origine
 
             // tuile definissant l'affichage de la carte
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -34,9 +34,12 @@ require_once(__DIR__.'../../../assets/php/controllers/variables.php');
                 }).addTo(map);
             
                 // marqueurs
-                var marker = L.marker([	42.47580468782499, 3.1583838445158774]).addTo(map);
-                marker.bindPopup("<h1> Plage du troc </h1><p>longitude : 3.158</p><p> latitude : 42.475</p>");
+                <?php foreach ($spots as $spot) : ?>
 
+                var marker = L.marker([<?php echo ($spot['latitude'].','.$spot['longitude']); ?>]).addTo(map);
+                marker.bindPopup("<h1> <?php echo $spot['spot_name']; ?> </h1><p>longitude : <?php echo( $spot['longitude']); ?> </p><p> latitude : <?php echo ($spot['latitude']); ?> </p>");
+                
+                <?php endforeach; ?>
         </script>
     </div> 
     

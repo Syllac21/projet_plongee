@@ -9,7 +9,7 @@
       <a class="mr-5 text-black hover:text-gray-300">Contact</a>
       <a href="/pages/spot/spot.php" class="mr-5 text-black hover:text-gray-300">Mes spots</a>
       <a href="/pages/add/addfish.php" class="mr-5 text-black hover:text-gray-300">Ajouter un poisson</a>
-      <a class="mr-5 text-black hover:text-gray-300">Ajouter un spot</a>
+      <a href="/pages/add/addspot.php" class="mr-5 text-black hover:text-gray-300">Ajouter un spot</a>
       
       
     </nav>
