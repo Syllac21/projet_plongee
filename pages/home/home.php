@@ -12,7 +12,7 @@
     ?>
     <main class="container mx-auto p-5">
         <h1 class="text-center text-2xl font-bold">Poissons</h1>
-        <section class="md:grid grid-cols-3 xl:grid grid-col3 gap-5">
+        <section class="md:grid grid-cols-5 xl:grid grid-col3 gap-5">
             <?php foreach ($fishs as $fish) : ?>
                 <article class="card rounded-xl overflow-hidden shadow-xl hover:shadow-2xl">
                     

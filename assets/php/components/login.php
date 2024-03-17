@@ -47,7 +47,7 @@
   
       <p class="mt-10 text-center text-sm text-gray-500">
         Créer un compte?
-        <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Nouveau compte</a>
+        <a href="/pages/add/adduser.php" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Nouveau compte</a>
       </p>
     </div>
   </div>

@@ -5,8 +5,6 @@ $postData=$_POST;
 
 // validation des données
 
-// town-name spot-name latitude longitude
-
 if(
     trim(strip_tags($postData['town-name'])) === '' ||
     trim(strip_tags($postData['spot-name'])) === '' ||
