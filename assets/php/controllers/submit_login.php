@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo(dirname(__DIR__,3).'/assets/php/middleware/db_connect.php');
+
 require_once(dirname(__DIR__,3).'/assets/php/middleware/db_connect.php');
 require_once(dirname(__DIR__,3).'/assets/php/controllers/variables.php');
 

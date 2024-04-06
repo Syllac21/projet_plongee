@@ -16,12 +16,12 @@
             <?php foreach ($fishs as $fish) : ?>
                 <article class="card rounded-xl overflow-hidden shadow-xl hover:shadow-2xl">
                     
-                    <img class="w-full" src="../../assets/.<?php echo($fish['image']); ?>" alt="<?php echo $fish['fish_name'] ?>" />
+                    <img class="w-full" src="/assets/images/<?php echo($fish['image']); ?>" alt="<?php echo $fish['fish_name'] ?>" />
                     
                     <div class="px-6 py-4">
                         <h2 class="text-xl mb-2"><?php echo $fish['fish_name']; ?> </h2>
                         <p class="text-gray-700">
-                            Taille moyenne :
+                            Taille moyenne :    
                         <?php echo $fish['average_size'];?>
                         </p>
                     </div>

@@ -52,12 +52,12 @@ if(!empty($_FILES['image']['name'])){
             exit;
     }
 }
-else{$image='../../images/pas-images.webp';}
+else{$image='pas-images.webp';}
 
 $fishName=trim(strip_tags($postData['fish-name']));
 $averageSize=trim(strip_tags($postData['average-size']));
 $about=trim(strip_tags($postData['about']));
-$image=$dossier.$fichier;
+$image=$fichier;
 
 $insertFish=$mysqlClient->prepare('INSERT INTO fishs(fish_name, average_size, about, image) VALUES (:fish_name, :average_size, :about, :image)');
 $insertFish->execute([
